@@ -1,0 +1,425 @@
+/* Grundläggande styling */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}
+
+.menu {
+	width: 30%;
+}
+
+.links {
+	display: flex;
+	justify-content: space-evenly;
+	list-style: none;
+	font-size: 1.34rem;
+}
+
+.links a {
+	color: black;
+	font-weight: 600;
+}
+
+/* Hamburgarikonen styling */
+.hamburger {
+	display: none;
+	flex-direction: column;
+	cursor: pointer;
+}
+
+.hamburger span {
+	width: 30px;
+	height: 3px;
+	background-color: black;
+	margin: 5px 0;
+	transition: 0.3s;
+}
+
+/* För små skärmar: visa hamburgermenyn och dölj navbar menyn */
+@media (max-width: 768px) {
+	.menu {
+		display: none; /* Dölj den vanliga menyn på mobiler */
+	}
+
+	.hamburger {
+		display: flex; /* Visa hamburgarmenyn på mobiler */
+	}
+
+	.menu.active {
+		display: block;
+		position: absolute;
+		top: 60px;
+		right: 20px;
+		background-color: #f9f9f9;
+		width: 70%;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+	}
+
+	.links {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.links a {
+		padding: 10px;
+		display: block;
+	}
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+.menu {
+	width: 30%;
+}
+
+.links {
+	display: flex;
+	justify-content: space-evenly;
+	list-style: none;
+	font-size: 1.34rem;
+}
+
+.links a {
+	color: black;
+	font-weight: 600;
+}
+
+.hamburger {
+	display: none;
+	flex-direction: column;
+	cursor: pointer;
+}
+
+.hamburger span {
+	width: 25px;
+	height: 3px;
+	background-color: black;
+	margin: 5px 0;
+	transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+	.menu {
+		display: none; /* Dölj den vanliga menyn på mobiler */
+	}
+
+	.hamburger {
+		display: flex; /* Visa hamburgarmenyn på mobiler */
+	}
+
+	.menu.active {
+		display: block;
+		position: absolute;
+		top: 60px;
+		right: 20px;
+		background-color: #f9f9f9;
+		width: 70%;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	}
+
+	.links {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.links a {
+		padding: 10px;
+		display: block;
+	}
+}
+
+.landing,
+.om {
+	padding: 20px;
+	text-align: center;
+}
+
+.landing .left {
+	margin: 2rem 0;
+}
+
+#header {
+	font-size: 3rem;
+	font-weight: 700;
+	margin-bottom: 1.5rem;
+}
+
+.om-head {
+	font-size: 2.5rem;
+	margin-top: 3rem;
+}
+
+.om-bread p {
+	font-size: 1.2rem;
+	margin: 20px;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+.menu {
+	width: 30%;
+}
+
+.links {
+	display: flex;
+	justify-content: space-evenly;
+	list-style: none;
+	font-size: 1.34rem;
+}
+
+.links a {
+	color: black;
+	font-weight: 600;
+}
+
+.hamburger {
+	display: none;
+	flex-direction: column;
+	cursor: pointer;
+}
+
+.hamburger span {
+	width: 25px;
+	height: 3px;
+	background-color: black;
+	margin: 5px 0;
+	transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+	@media (max-width: 768px) {
+		.menu {
+			display: none; /* Dölj den vanliga menyn på mobiler */
+		}
+
+		.hamburger {
+			display: flex; /* Visa hamburgarmenyn på mobiler */
+		}
+
+		.menu.active {
+			display: block;
+			position: absolute;
+			top: 60px;
+			right: 20px;
+			background-color: #f9f9f9;
+			width: 70%;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+		}
+
+		.links {
+			flex-direction: column;
+			text-align: center;
+		}
+
+		.links a {
+			padding: 10px;
+			display: block;
+		}
+	}
+
+	.landing,
+	.om {
+		padding: 20px;
+		text-align: center;
+	}
+	.landing {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.landing .left {
+		margin: 2rem 0;
+	}
+
+	#header {
+		font-size: 3rem;
+		font-weight: 700;
+		margin-bottom: 1.5rem;
+	}
+
+	.om-head {
+		font-size: 2.5rem;
+		margin-top: 3rem;
+	}
+
+	.om-bread p {
+		font-size: 1.2rem;
+		margin: 20px;
+	}
+	.menu {
+		display: none; /* Dölj den vanliga menyn på mobiler */
+	}
+
+	.hamburger {
+		display: flex; /* Visa hamburgarmenyn på mobiler */
+	}
+
+	.menu.active {
+		display: block;
+		position: absolute;
+		top: 60px;
+		right: 20px;
+		background-color: #f9f9f9;
+		width: 70%;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+	}
+
+	.links {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.links a {
+		padding: 10px;
+		display: block;
+	}
+}
+
+.landing,
+.om {
+	padding: 20px;
+	text-align: center;
+}
+
+.landing .left {
+	margin: 2rem 0;
+}
+
+#header {
+	font-size: 3rem;
+	font-weight: 700;
+	margin-bottom: 1.5rem;
+}
+
+.om-head {
+	font-size: 2.5rem;
+	margin-top: 3rem;
+}
+
+.om-bread p {
+	font-size: 1.2rem;
+	margin: 20px;
+}
+
+.landing {
+	display: flex;
+	justify-content: center;
+	margin: 0 20px;
+}
+
+.left {
+	/* background-color: red; */
+	width: 50%;
+	margin: 4rem 2rem;
+}
+#header {
+	font-size: 5rem;
+	font-weight: 700;
+	margin-bottom: 2rem;
+}
+
+#bread {
+	width: 100%;
+	font-size: 2rem;
+}
+/* Stilen för det elementet med klassen .right */
+.right {
+	width: 50%;
+	aspect-ratio: 1 / 1;
+	margin: 2rem;
+
+	/* height: 100vh; */
+	border-radius: 25px;
+
+	/* Skapar en regnbågsgradient */
+	background: linear-gradient(
+		45deg,
+		red,
+		orange,
+		yellow,
+		green,
+		blue,
+		indigo,
+		violet
+	);
+
+	/* Gör så att gradienten täcker större område för att kunna flyttas */
+	background-size: 100000% 10000%;
+
+	/* Animation som rör gradienten för en kontinuerlig effekt */
+	animation: rainbowLoop 50s linear infinite;
+}
+
+/* Keyframes för att flytta bakgrundspositionen och skapa animationen */
+@keyframes rainbowLoop {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.om {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: c;
+}
+.om-head {
+	font-size: 4rem;
+	margin-top: 7rem;
+}
+
+.om-bread {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 4rem;
+}
+
+.om-bread p {
+	font-size: 2rem;
+	width: 50%;
+}
