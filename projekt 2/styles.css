@@ -1,0 +1,192 @@
+html {
+	scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+nav.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	background-color: red;
+	padding: 20px;
+}
+
+.navbar .logo {
+	font-size: 1.25rem;
+	color: white;
+}
+
+.navbar .navlinks {
+	display: flex;
+	gap: 1rem;
+	transition: transform 0.3s ease-in-out;
+}
+
+.navbar .navlinks a {
+	color: white;
+	text-decoration: none;
+	font-size: 1rem;
+}
+
+.pic2 {
+	display: flex;
+	justify-content: center;
+	padding: 50px 0 50px 0;
+}
+
+.pic3 {
+	display: flex;
+	justify-content: center;
+	padding: 50px 0 50px 0;
+}
+
+.pic7 {
+	display: flex;
+	justify-content: center;
+	padding: 50px 0 50px 0;
+}
+.hamburger {
+	display: none;
+	font-size: 2rem;
+	color: white;
+	cursor: pointer;
+}
+
+.close-btn {
+	display: none;
+}
+
+section {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.text__box1 {
+	display: flex;
+	justify-content: center;
+}
+.text__box2 {
+	display: flex;
+	justify-content: center;
+}
+
+.text__box1,
+.text__box2 {
+	flex: 1 1 40%;
+	background-color: red !important;
+	color: white;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	min-height: 100%;
+	z-index: 10;
+}
+
+.pic1,
+.pic2,
+.pic3,
+.pic4,
+.pic5,
+.pic6,
+.pic7 {
+	flex: 1 1 40%;
+}
+
+p {
+	font-size: 1.25rem;
+	line-height: 1.4;
+}
+
+/* SIDOMENY MOBIL */
+@media (max-width: 768px) {
+	.navbar {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.hamburger {
+		display: block;
+	}
+
+	.navlinks {
+		position: fixed;
+		top: 0;
+		left: 0;
+		background-color: orange;
+		height: 100vh;
+		min-width: 100vw;
+		flex-direction: column;
+		padding: 2rem 1rem;
+		transform: translateX(-500%);
+		z-index: 1000;
+	}
+
+	.navlinks.active {
+		transform: translateX(0);
+	}
+
+	.close-btn {
+		display: block;
+		align-self: flex-end;
+		background: none;
+		border: none;
+		font-size: 2rem;
+		color: white;
+		cursor: pointer;
+		margin-bottom: 1rem;
+	}
+
+	.navlinks a {
+		font-size: 1.25rem;
+		margin: 0.5rem 0;
+	}
+
+	.text__box1,
+	.text__box2,
+	.pic1,
+	.pic2,
+	.pic3,
+	.pic4,
+	.pic5,
+	.pic6,
+	.pic7 {
+		flex: 1 1 40%;
+	}
+
+	p {
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 480px) {
+	nav.navbar {
+		padding: 1rem;
+	}
+
+	.navbar .logo {
+		font-size: 1rem;
+	}
+
+	section {
+		padding: 1rem;
+	}
+
+	p {
+		font-size: 0.875rem;
+	}
+}

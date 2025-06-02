@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			src = "http://koda.nu/simple.js";
+		</script>
+		<script>
+			var cat = { x: 100, y: 100, speed: 5 };
+			hideMouse();
+			updatesPerSecond = 120;
+			function update() {
+				clearScreen();
+
+				if (keyboard.left) {
+					cat.x -= cat.speed;
+				}
+				if (keyboard.right) {
+					cat.x += cat.speed;
+				}
+				if (keyboard.up) {
+					cat.y -= cat.speed;
+				}
+				if (keyboard.down) {
+					cat.y += cat.speed;
+				}
+
+				circle(cat.x, cat.y, 20, "black");
+				circle(mouse.x, mouse.y, 20, "red");
+
+				console.log(mouse.x + mouse.y);
+
+				if (distance(cat, mouse) < 40) {
+					showMouse();
+					stopUpdate();
+				}
+			}
+		</script>
+	</body>
+</html>
